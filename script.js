@@ -1,7 +1,10 @@
 const box = document.querySelector('.Test')
+const Input = document.querySelector('.input')
+const pre = "You typed: "
 document.addEventListener('DOMContentLoaded', function() {
-    box.setAttribute("autofocus", "true")
-    box.addEventListener('input', function(event) {
-        box.value = event.data
-    })
+    // 
+})
+
+document.addEventListener('keyup', function(input) {
+    Input.textContent = pre + input.key
 })
