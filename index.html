@@ -1,29 +1,18 @@
+<!-- index page for Mobile platground -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Test</title>
-    <style>
-        .test {
-            display: flex;
-            justify-self: center;
-            margin: 60px;
-            border: 1px solid black;
-        }
-    </style>
+
 </head>
 <body>
-    <input class ="test" type="text" autofocus/>
-    <input class ="test" type="text" autofocus/>
+<div class="page">
+    <input class ="Test" type="text" autofocus/>
+    <input class ="Test" type="text" autofocus/>
+</div>
 </body>
-<script>
-    const box = document.querySelector('.test')
-    document.addEventListener('DOMContentLoaded', function() {
-        box.setAttribute("autofocus", "true")
-        box.addEventListener('input', function(event) {
-            box.value = event.data
-        })
-    })
-</script>
+<script src="script.js"></script>
 </html>
